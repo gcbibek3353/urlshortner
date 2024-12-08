@@ -24,7 +24,7 @@ const ShortnerForm = () => {
             if (!res.success) {
                 toast.error(res.message);
             } else {
-                setShortUrl(res.data?.shortUrl);
+                setShortUrl(res.data?.shortUrl as string);
                 toast.success(res.message);
             }
             setDetails({
