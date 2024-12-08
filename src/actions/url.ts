@@ -1,6 +1,5 @@
 "use server"
 import prisma from "@/db"
-import { url } from "inspector"
 
 export const postUrlAction = async ({ url, shortUrl }: { url: string, shortUrl: string }) => {
         

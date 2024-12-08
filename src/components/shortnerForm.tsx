@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { Label } from './ui/label'
+import { Label} from './ui/label'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { postUrlAction } from '@/actions/url'
@@ -44,10 +44,10 @@ const shortnerForm = () => {
           </h2>
           <div className="space-y-4">
             <div>
-              <label htmlFor="url" className="block text-sm font-medium text-gray-700">
+              <Label htmlFor="url" className="block text-sm font-medium text-gray-700">
                 URL:
-              </label>
-              <input
+              </Label>
+              <Input
                 id="url"
                 type="text"
                 placeholder="Enter URL"
@@ -56,10 +56,10 @@ const shortnerForm = () => {
               />
             </div>
             <div>
-              <label htmlFor="shortUrl" className="block text-sm font-medium text-gray-700">
+              <Label htmlFor="shortUrl" className="block text-sm font-medium text-gray-700">
                 Short URL:
-              </label>
-              <input
+              </Label>
+              <Input
                 id="shortUrl"
                 type="text"
                 placeholder="Enter Short URL"
@@ -67,12 +67,12 @@ const shortnerForm = () => {
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               />
             </div>
-            <button
+            <Button
               onClick={() => handlesubmit()}
               className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               Generate
-            </button>
+            </Button>
           </div>
           {shortUrl
            && (
