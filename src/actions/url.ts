@@ -27,7 +27,7 @@ export const postUrlAction = async ({ url, shortUrl }: { url: string, shortUrl: 
             message : "short url created Successfully",
             data : res
         }
-    } catch (error: any) {
+    } catch (error) {
         console.log(error);
         return {
             success: false,

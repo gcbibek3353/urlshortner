@@ -8,7 +8,7 @@ import { toast } from 'sonner'
 import Link from 'next/link'
 import { Copy } from 'lucide-react'
 
-const shortnerForm = () => {
+const ShortnerForm = () => {
     const [shortUrl, setShortUrl] = useState("");
     const [details, setDetails] = useState({
         url: "",
@@ -98,4 +98,4 @@ const shortnerForm = () => {
     )
 }
 
-export default shortnerForm
+export default ShortnerForm
