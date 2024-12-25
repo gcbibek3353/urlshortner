@@ -10,8 +10,8 @@ const page = async ({params} : {params : Promise<{url : string}>}) => {
         redirect(res.url);
     }
     else{
-        redirect('/');
         toast.success(res.message);
+        redirect('/');
     }
 }
 
